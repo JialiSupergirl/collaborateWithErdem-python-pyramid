@@ -1,0 +1,142 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+#menu-main .selected {
+font-weight: bold;
+}
+h3 {
+    margin-left: 160px;
+}
+.gallery-row {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 250px 200px 25px 30px 60px;
+    grid-template-rows: 200px;
+    align-items: center;
+    justify-items: center;
+    width: 560px;
+    border-style: solid;
+    border-width: thin;
+    }
+
+header {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+    font-size: larger;
+    font-weight: bold;
+    background-color: #c5d6c3;
+    height: 100px;
+}
+header>img {
+    height: 90px;
+    margin-left: 200px;
+}
+footer {
+    text-align: center;
+}
+.gallery img {
+    height: 140px;
+}
+.gallery-image {
+    margin: 10px;
+    text-align: center;
+}
+#menu-main {
+    background-color: #709a6b;
+    padding: 0 0.5vw;
+    height: 140 px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+#menu-main>ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+#menu-main a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 3px;
+    width: 16%;
+    transition: 200ms ease-out;
+    vertical-align: middle;
+    border-style: solid;
+    border-color: white;
+    border-width: thin;
+    text-align: center;
+    font-family: frm;
+    font-weight: bold;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#menu-main a:hover {
+    background-color: #126341;
+    color: #dfdbd5;
+    transform: scale(1.03);
+}
+
+#squares {
+    margin: auto;
+    width: 750px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: 300px;
+    font-family: frm;
+    font-weight: 600;
+    align-items: center;
+    justify-items: center;
+    overflow: hidden;
+            
+    }
+#r1, #r2, #r3, #r4, #r5 {
+    height: 286px;
+    display: grid;
+    grid-template-rows: 143px 143px;
+    align-items: center;
+    justify-items: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    color: black;
+    text-decoration: none;
+    transition: 200ms ease-out;
+    background-color: #d0e9c6;
+}
+#r1:hover, #r2:hover, #r3:hover, #r4:hover, #r5:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#squares img {
+    height: 143px;
+    width: 143px;
+    object-fit: none;
+}
+.s1 {
+    display: flex;
+    margin: 5px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: smaller;
+    text-align: center;
+}
+.s1 img {
+    height: 15vw;
+    margin: 0.2vw;
+}
+.s {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+

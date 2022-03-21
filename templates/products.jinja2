@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="static/main1.css" />
+</head>
+
+<body>
+
+    <nav id="menu-main">
+        <ul>
+            {% for item in items %}
+            <li><a href="/{{item[1]}}">{{item[0]}}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <h1 class="header">{{title}}</h1>
+    <div class="gallery">
+        {% for gi in products %}
+            <div class="gallery-row">
+                <div class="gallery-image">
+                    <img src="./img/gallery/{{gi[0]}}" />
+                </div>
+                <div>{{gi[1]}}</div>
+                <div id="unit">$</div>
+                <div id="price">{{gi[2]}}</div>
+            </div>
+        {% endfor %}
+    </div>
+
+</body>
+<footer>
+&copy; Team XD / Department of Assignments
+</footer>
+</html>
